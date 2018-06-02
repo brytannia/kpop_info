@@ -1,0 +1,11 @@
+<%= link_to 'Home', groups_path %>
+<p><%= @g.id %></p>
+<p><%= @g.name %></p>
+<img src="<%= @g.image %>" %>
+<p><%= @g.year %></p>
+<p><%= @g.info %></p>
+<p><%= @g.members %></p>
+<p>Hits:</p>
+<% @hits.each do |h| %>
+    <p><%= link_to h.name, h %></p>
+<% end %>

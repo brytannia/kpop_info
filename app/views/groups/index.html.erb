@@ -1,3 +1,6 @@
-<div>
- <%= @data.first.id %>
-</div>
+<% @data.each do |g| %>
+    <div>
+      <%= link_to g.name, g %>
+      <img src="<%=g.image%>" %>
+    </div>
+<% end %>

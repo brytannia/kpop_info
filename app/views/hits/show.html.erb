@@ -1,0 +1,9 @@
+<%= link_to @g.name, @g %>
+<p><%= @h.id %></p>
+<p><%= @h.name %></p>
+<p><%= @h.year %></p>
+<p><%= @h.album %></p>
+<p>Videos:</p>
+<% @videos.each do |h| %>
+    <p><%= link_to "Video #{h.id}", h %></p>
+<% end %>
