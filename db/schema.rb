@@ -38,4 +38,20 @@ ActiveRecord::Schema.define(version: 20180601175641) do
     t.index ["hit_id"], name: "index_videos_on_hit_id"
   end
 
+  create_table "albums", force: :cascade do |t|
+    t.bigint "group_id"
+    t.string "title"
+    t.string "type"
+    t.string "cover"
+    t.integer "year"
+    t.index ["album_id"], name: "index_albums_on_group_id"
+  end
+
+  create_table "tracks", force: :cascade do |t|
+    t.bigint "album_id"
+    t.string "title"
+    t.integer "duration"
+    t.index ["track_id"], name: "index_tracks_on_album_id"
+  end
+
 end
