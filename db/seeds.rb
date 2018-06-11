@@ -10,17 +10,17 @@ a1 = Album.create(group: t,
                   title: 'Twicetagram',
                   year: '2017',
                   cover: 'https://en.wikipedia.org/wiki/Twicetagram#/media/File:Twicetagram_album_cover.png',
-                  type: 'full')
+                  size: 'full')
 
-t1 = Album.create(album: a1,
+t1 = Track.create(album: a1,
                   title: 'Likey',
                   duration: 208)
 
-t2 = Album.create(album: a1,
+t2 = Track.create(album: a1,
                   title: 'Wow',
                   duration: 181)
 
-t3 = Album.create(album: a1,
+t3 = Track.create(album: a1,
                   title: 'Rollin',
                   duration: 191)
 
@@ -28,17 +28,17 @@ a2 = Album.create(group: t,
                   title: 'Twicecoaster: Lane 1',
                   year: '2016',
                   cover: 'https://en.wikipedia.org/wiki/Twicecoaster:_Lane_1#/media/File:TWICEcoaster_LANE_1_Cover.jpg',
-                  type: 'ep')
+                  size: 'ep')
 
-t1 = Album.create(album: a2,
+t1 = Track.create(album: a2,
                   title: 'TT',
                   duration: 214)
 
-t2 = Album.create(album: a2,
+t2 = Track.create(album: a2,
                   title: '1 to 10',
                   duration: 176)
 
-t3 = Album.create(album: a2,
+t3 = Track.create(album: a2,
                   title: 'Jelly Jelly',
                   duration: 212)
 
@@ -46,17 +46,17 @@ a3 = Album.create(group: t,
                   title: 'What Is Love?',
                   year: '2018',
                   cover: 'https://en.wikipedia.org/wiki/What_Is_Love%3F_(EP)#/media/File:Twice_%E2%80%93_What_Is_Love%3F_cover.jpg',
-                  type: 'ep')
+                  size: 'ep')
 
-t1 = Album.create(album: a3,
+t1 = Track.create(album: a3,
                   title: 'What Is Love?',
                   duration: 208)
 
-t2 = Album.create(album: a3,
+t2 = Track.create(album: a3,
                   title: 'Ho!',
                   duration: 189)
 
-t3 = Album.create(album: a3,
+t3 = Track.create(album: a3,
                   title: 'Dejavu',
                   duration: 193)
 
@@ -114,17 +114,17 @@ a1 = Album.create(group: r,
                   title: 'The Red',
                   year: '2015',
                   cover: 'https://en.wikipedia.org/wiki/The_Red_(album)#/media/File:The_Red_album_by_Red_Velvet.jpg',
-                  type: 'full')
+                  size: 'full')
 
-t1 = Album.create(album: a1,
+t1 = Track.create(album: a1,
                   title: 'Dumb Dumb',
                   duration: 202)
 
-t2 = Album.create(album: a1,
+t2 = Track.create(album: a1,
                   title: 'Campfire',
                   duration: 196)
 
-t3 = Album.create(album: a1,
+t3 = Track.create(album: a1,
                   title: 'Cool World',
                   duration: 245)
 
@@ -132,17 +132,17 @@ a2 = Album.create(group: r,
                   title: 'Perfect Velvet',
                   year: '2017',
                   cover: 'https://en.wikipedia.org/wiki/Perfect_Velvet#/media/File:Perfect_Velvet-cover.jpg',
-                  type: 'full')
+                  size: 'full')
 
-t1 = Album.create(album: a2,
+t1 = Track.create(album: a2,
                   title: 'Peek-a-Boo',
                   duration: 189)
 
-t2 = Album.create(album: a2,
+t2 = Track.create(album: a2,
                   title: 'I Just',
                   duration: 188)
 
-t3 = Album.create(album: a2,
+t3 = Track.create(album: a2,
                   title: 'Attaboy',
                   duration: 196)
 
@@ -150,17 +150,17 @@ a3 = Album.create(group: r,
                   title: 'Ice Cream Cake',
                   year: '2015',
                   cover: 'https://en.wikipedia.org/wiki/Ice_Cream_Cake_(EP)#/media/File:Ice_Cream_Cake_(EP).jpg',
-                  type: 'ep')
+                  size: 'ep')
 
-t1 = Album.create(album: a3,
+t1 = Track.create(album: a3,
                   title: 'Ice Cream Cake',
                   duration: 191)
 
-t2 = Album.create(album: a3,
+t2 = Track.create(album: a3,
                   title: 'Automatic',
                   duration: 210)
 
-t3 = Album.create(album: a3,
+t3 = Track.create(album: a3,
                   title: 'Stupid Cupid',
                   duration: 209)
 
@@ -203,17 +203,17 @@ a1 = Album.create(group: x,
                   title: 'Pink Tape',
                   year: '2013',
                   cover: 'https://en.wikipedia.org/wiki/Pink_Tape#/media/File:Fx-PinkTape.jpg',
-                  type: 'full')
+                  size: 'full')
 
-t1 = Album.create(album: a1,
+t1 = Track.create(album: a1,
                   title: 'Rum Pum Pum Pum',
                   duration: 198)
 
-t2 = Album.create(album: a1,
+t2 = Track.create(album: a1,
                   title: 'Signal',
                   duration: 201)
 
-t3 = Album.create(album: a1,
+t3 = Track.create(album: a1,
                   title: 'Airplane',
                   duration: 214)
 
@@ -221,17 +221,17 @@ a2 = Album.create(group: x,
                   title: 'Red Light',
                   year: '2014',
                   cover: 'https://en.wikipedia.org/wiki/Red_Light_(album)#/media/File:Red_Light_album_cover.jpg',
-                  type: 'full')
+                  size: 'full')
 
-t1 = Album.create(album: a2,
+t1 = Track.create(album: a2,
                   title: 'Red Light',
                   duration: 212)
 
-t2 = Album.create(album: a2,
+t2 = Track.create(album: a2,
                   title: 'Rainbow',
                   duration: 210)
 
-t3 = Album.create(album: a2,
+t3 = Track.create(album: a2,
                   title: 'Summer Lover',
                   duration: 174)
 
@@ -239,17 +239,17 @@ a3 = Album.create(group: x,
                   title: '4 Walls',
                   year: '2015',
                   cover: 'https://upload.wikimedia.org/wikipedia/en/0/02/F%28x%29_4_Walls_CD_Cover.jpg',
-                  type: 'ep')
+                  size: 'ep')
 
-t1 = Album.create(album: a3,
+t1 = Track.create(album: a3,
                   title: '4 Walls',
                   duration: 207)
 
-t2 = Album.create(album: a3,
+t2 = Track.create(album: a3,
                   title: 'Deja Vu',
                   duration: 220)
 
-t3 = Album.create(album: a3,
+t3 = Track.create(album: a3,
                   title: 'Rude Love',
                   duration: 258)
 
