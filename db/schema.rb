@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180601175641) do
+ActiveRecord::Schema.define(version: 20180611170305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "albums", force: :cascade do |t|
+    t.bigint "group_id"
+    t.string "title"
+    t.string "size"
+    t.string "cover"
+    t.integer "year"
+    t.index ["group_id"], name: "index_albums_on_group_id"
+  end
 
   create_table "groups", force: :cascade do |t|
     t.string "name"
@@ -31,27 +40,18 @@ ActiveRecord::Schema.define(version: 20180601175641) do
     t.index ["group_id"], name: "index_hits_on_group_id"
   end
 
+  create_table "tracks", force: :cascade do |t|
+    t.bigint "album_id"
+    t.string "title"
+    t.integer "duration"
+    t.index ["album_id"], name: "index_tracks_on_album_id"
+  end
+
   create_table "videos", force: :cascade do |t|
     t.bigint "hit_id"
     t.string "link"
     t.integer "views"
     t.index ["hit_id"], name: "index_videos_on_hit_id"
-  end
-
-  create_table "albums", force: :cascade do |t|
-    t.bigint "group_id"
-    t.string "title"
-    t.string "type"
-    t.string "cover"
-    t.integer "year"
-    t.index ["album_id"], name: "index_albums_on_group_id"
-  end
-
-  create_table "tracks", force: :cascade do |t|
-    t.bigint "album_id"
-    t.string "title"
-    t.integer "duration"
-    t.index ["track_id"], name: "index_tracks_on_album_id"
   end
 
 end
