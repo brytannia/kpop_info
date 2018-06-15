@@ -1,11 +1,53 @@
-<%= link_to 'Home', groups_path %>
-<p><%= @g.id %></p>
-<p><%= @g.name %></p>
-<img src="<%= @g.image %>" %>
-<p><%= @g.year %></p>
-<p><%= @g.info %></p>
-<p><%= @g.members %></p>
-<p>Hits:</p>
-<% @hits.each do |h| %>
-    <p><%= link_to h.name, h %></p>
-<% end %>
+<div class="page">
+  <!-- <img class="page__bg" src="" %> -->
+  <div class="page__bg"
+       style="background-image: url('<%= @g.image %>');"></div>
+  <div class="page__content-wrapper">
+    <header class="page__header">
+      <%= link_to 'Home', groups_path, class: 'page__home-link' %>
+    </header>
+    <article class="page__info-cont">
+      <h1 class="page__info-title"><%= @g.name %></h1>
+      <div class="page__text-info-wrapper">
+        <section class="page__info-bio">
+          <div class="page__info-bio-row">
+            <p class="page__bio-row-title">Year:</p>
+            <p class="page__bio-row-text"><%= @g.year %></p>
+          </div>
+          <div class="page__info-bio-row">
+            <p class="page__bio-row-title">Info: </p>
+            <p class="page__bio-row-text"><%= @g.info %></p>
+          </div>
+          <div class="page__info-bio-row">
+            <p class="page__bio-row-title">Members: </p>
+            <p class="page__bio-row-text"><%= @g.members %></p>
+          </div>
+        </section>
+        <aside class="page__additional-info-wrapper">
+          <section class="page__additional-info-section">
+            <h2 class="page__additional-info-section-title">Hits</h2>
+            <ul class="page__additional-info-section-list">
+              <% @hits.each do |h| %>
+                  <li class="page__additional-info-section-item"><%= link_to h.name, h %></li>
+              <% end %>
+            </ul>
+          </section>
+          <section class="page__additional-info-section">
+            <h2 class="page__additional-info-section-title">Albums</h2>
+            <ul class="page__additional-info-section-list">
+              <% @albums.each do |a| %>
+                  <li class="page__additional-info-section-item page__additional-info-section-item--with-icon">
+                    <div class="page__additional-info-section-item-img" style="background-image: url('<%= a.cover %>')"></div>
+                    <div class="page__additional-info-section-item-content-wrapper">
+                      <p class="page__additional-info-section-item-content-text"><%= a.title %></p>
+                      <p class="page__additional-info-section-item-content-text"><%= a.year %></p>
+                    </div>
+                  </li>
+              <% end %>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </article>
+  </div>
+</div>

@@ -9,7 +9,7 @@ t = Group.create(
 a1 = Album.create(group: t,
                   title: 'Twicetagram',
                   year: '2017',
-                  cover: 'https://en.wikipedia.org/wiki/Twicetagram#/media/File:Twicetagram_album_cover.png',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Twicetagram_album_cover.png',
                   size: 'full')
 
 t1 = Track.create(album: a1,
@@ -27,7 +27,7 @@ t3 = Track.create(album: a1,
 a2 = Album.create(group: t,
                   title: 'Twicecoaster: Lane 1',
                   year: '2016',
-                  cover: 'https://en.wikipedia.org/wiki/Twicecoaster:_Lane_1#/media/File:TWICEcoaster_LANE_1_Cover.jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/9/93/TWICEcoaster_LANE_1_Cover.jpg',
                   size: 'ep')
 
 t1 = Track.create(album: a2,
@@ -45,7 +45,7 @@ t3 = Track.create(album: a2,
 a3 = Album.create(group: t,
                   title: 'What Is Love?',
                   year: '2018',
-                  cover: 'https://en.wikipedia.org/wiki/What_Is_Love%3F_(EP)#/media/File:Twice_%E2%80%93_What_Is_Love%3F_cover.jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/1/16/Twice_%E2%80%93_What_Is_Love%3F_cover.jpg',
                   size: 'ep')
 
 t1 = Track.create(album: a3,
@@ -113,7 +113,7 @@ r = Group.create(
 a1 = Album.create(group: r,
                   title: 'The Red',
                   year: '2015',
-                  cover: 'https://en.wikipedia.org/wiki/The_Red_(album)#/media/File:The_Red_album_by_Red_Velvet.jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/0/00/The_Red_album_by_Red_Velvet.jpg',
                   size: 'full')
 
 t1 = Track.create(album: a1,
@@ -131,7 +131,7 @@ t3 = Track.create(album: a1,
 a2 = Album.create(group: r,
                   title: 'Perfect Velvet',
                   year: '2017',
-                  cover: 'https://en.wikipedia.org/wiki/Perfect_Velvet#/media/File:Perfect_Velvet-cover.jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/d/dd/Perfect_Velvet-cover.jpg',
                   size: 'full')
 
 t1 = Track.create(album: a2,
@@ -149,7 +149,7 @@ t3 = Track.create(album: a2,
 a3 = Album.create(group: r,
                   title: 'Ice Cream Cake',
                   year: '2015',
-                  cover: 'https://en.wikipedia.org/wiki/Ice_Cream_Cake_(EP)#/media/File:Ice_Cream_Cake_(EP).jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/e/e3/Ice_Cream_Cake_%28EP%29.jpg',
                   size: 'ep')
 
 t1 = Track.create(album: a3,
@@ -202,7 +202,7 @@ x = Group.create(
 a1 = Album.create(group: x,
                   title: 'Pink Tape',
                   year: '2013',
-                  cover: 'https://en.wikipedia.org/wiki/Pink_Tape#/media/File:Fx-PinkTape.jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/8/8d/Fx-PinkTape.jpg',
                   size: 'full')
 
 t1 = Track.create(album: a1,
@@ -220,7 +220,7 @@ t3 = Track.create(album: a1,
 a2 = Album.create(group: x,
                   title: 'Red Light',
                   year: '2014',
-                  cover: 'https://en.wikipedia.org/wiki/Red_Light_(album)#/media/File:Red_Light_album_cover.jpg',
+                  cover: 'https://upload.wikimedia.org/wikipedia/en/8/82/Red_Light_album_cover.jpg',
                   size: 'full')
 
 t1 = Track.create(album: a2,
