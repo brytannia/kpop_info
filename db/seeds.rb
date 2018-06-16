@@ -2,7 +2,7 @@ t = Group.create(
   name: 'Twice 트와이스',
   info: 'girl group formed by JYP Entertainment through the 2015 reality show `Sixteen`',
   year: '2015',
-  image: 'https://www.allkpop.com/upload/2017/05/af_org/17032117/buzz.jpg',
+  image: 'http://l-my.net/wp-content/uploads/2018/02/twice-new-jyp-confirmed-twice-eback-on-may-ilovekstars-of-twice.gif',
   members: 'Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, Tzuyu'
 )
 
@@ -106,7 +106,7 @@ r = Group.create(
   name: 'Red Velvet 레드벨벳',
   info: 'South Korean girl group formed by SM Entertainment',
   year: '2014',
-  image: 'https://www.allkpop.com/upload/2017/04/af_org/26103237/red-velvet.jpg',
+  image: 'https://images4.alphacoders.com/906/thumb-1920-906315.jpg',
   members: 'Joy, Irene, Seulgi, Wendy, Yeri'
 )
 
@@ -195,7 +195,7 @@ x = Group.create(
   name: 'f(x) 에프엑스',
   info: 'South Korean girl group formed by SM Entertainment. They are one of the few recognized K-pop groups internationally, becoming the first K-pop act to perform at SXSW.',
   year: '2009',
-  image: 'https://vignette.wikia.nocookie.net/drama/images/f/f6/Fx-–-4-Walls.jpg/revision/latest?cb=20151108051105&path-prefix=es',
+  image: 'https://static.asiachan.com/f%28x%29.full.84594.jpg',
   members: 'Victoria, Krystal, Amber, Luna'
 )
 
