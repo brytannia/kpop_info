@@ -1,6 +1,10 @@
-<% @data.each do |g| %>
-    <div>
-      <%= link_to g.name, g %>
-      <img src="<%=g.image%>" %>
-    </div>
-<% end %>
+<div class="page">
+  <div class="page__content-wrapper">
+    <% @data.each do |g| %>
+      <%= link_to g, class: 'page__group-link' do %>
+        <div class="page__group-link-img" style="background-image: url('<%= g.image %>')"></div>
+        <h1 class="page__group-title"><%= g.name %></h1>
+      <% end %>
+  <% end %>
+  </div>
+</div>

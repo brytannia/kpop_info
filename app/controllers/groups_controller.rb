@@ -6,5 +6,6 @@ class GroupsController < ApplicationController
   def show
     @g = Group.find(params[:id])
     @hits = @g.hits
+    @albums = @g.albums
   end
 end

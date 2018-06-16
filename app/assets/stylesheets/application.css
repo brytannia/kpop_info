@@ -1,15 +1,271 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+
+
+/*
+BASE STYLES
+*/
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+line-height: 1.4em;
+font-family: inherit;
+color: inherit;
+text-decoration: none;
+}
+*:focus {
+outline: none;
+}
+*.is-hidden,
+*.is-example {
+display: none !important;
+}
+*.is-visualy-hidden {
+visibility: hidden !important;
+}
+*[hidden] {
+display: none;
+}
+html, body {
+direction: ltr;
+display: block;
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+font-family: 'Heebo', sans-serif;
+font-size: 14px;
+color: #333333;
+}
+u {
+text-decoration: underline;
+}
+*::-moz-focus-inner {
+border: 0;
+}
+button {
+font-size: inherit;
+font-family: inherit;
+background-color: transparent;
+border: 0;
+cursor: pointer;
+}
+a:focus {
+color: inherit;
+text-decoration: none;
+}
+a:focus,
+button:focus {
+outline: 0;
+}
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+}
+input[type='submit'] {
+-webkit-border-radius: 3px !important;
+border-radius: 3px !important;
+}
+textarea {
+resize: none;
+overflow: auto;
+}
+.main-app {
+height: 100%;
+}
+.main-app--overflow {
+overflow: hidden;
+}
+@media (max-width: 767px) {
+a[data-cshid] {
+  bottom: 60px !important;
+}
+#intercom-container {
+  display:none!important;
+}
+}
+
+/*
+PAGE STYLES
+*/
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page__bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.page__content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: block;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.page__group-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin: 5px 0;
+}
+.page__group-link-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page__group-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 100px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.page__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px 0 rgba(0, 34, 102, 0.1), 0 1px 10px 0 rgba(0, 34, 102, 0.2);
+}
+.page__home-link {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 25px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #993563;
+  border-radius: 5px;
+}
+.page__info-cont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+}
+.page__info-title {
+  display: block;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+.page__info-bio {
+  display: table;
+  flex-grow: 1; 
+}
+.page__info-bio-row {
+  display: table-row;
+}
+.page__bio-row-title {
+  display: table-cell;
+  padding-right: 15px;
+  font-weight: 500;
+}
+.page__bio-row-text {
+  display: table-cell;
+}
+.page__additional-info-wrapper {
+  flex-shrink: 0;
+  width: 300px;
+}
+.page__text-info-wrapper {
+  display: flex;
+  width: 100%;
+}
+.page__additional-info-section {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 5px 0 rgba(0, 34, 102, 0.1), 0 1px 10px 0 rgba(0, 34, 102, 0.2);
+}
+.page__additional-info-section-title {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(134, 134, 134, 0.3), 0 1px 2px 0 rgba(134, 134, 134, 0.5);
+}
+.page__additional-info-section-list {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  list-style-type: none;
+}
+.page__additional-info-section-item {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.page__additional-info-section-item:before {
+  content: '- ';
+}
+.page__additional-info-section-item--with-icon {
+  display: flex;
+  align-items: center;
+}
+.page__additional-info-section-item--with-icon:before {
+  display: none;
+}
+.page__additional-info-section-item-img {
+  display: block;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.page__additional-info-section-item-content-wrapper {
+  display: block;
+  flex-grow: 1;
+  font-size: 16px;
+}
